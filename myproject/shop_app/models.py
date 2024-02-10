@@ -30,6 +30,23 @@ from django.db import models
 моделями по желанию. Что по вашему мнению актуально в
 такой базе данных.
 
+Доработать магазин
+Создайте шаблон для вывода всех заказов клиента и списком товаров внутри 
+каждого заказа.
+Подготовьте необходимый маршрут и представление.
+
+Домашнее задание задание
+Продолжаем работать с товарами и заказами.
+
+Создайте шаблон, который выводит список заказанных клиентом товаров из всех 
+его заказов с сортировкой по времени:
+— за последние 7 дней (неделю)
+— за последние 30 дней (месяц)
+— за последние 365 дней (год)
+
+Товары в списке не должны повторятся.
+
+
 """
 
 
@@ -59,7 +76,7 @@ class Order(models.Model):
     customer = models.ForeignKey(Client, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
-    date_ordered = models.DateTimeField(auto_now_add=True)
+    date_ordered = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return f"{self.customer} купил товаров на сумму {self.total_price}"
