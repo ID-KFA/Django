@@ -1,9 +1,11 @@
-from django.shortcuts import render, get_object_or_404
 from django.http import HttpRequest
-from .models import Order, Client
+from .models import Order, Client, Product
 from django.utils import timezone
 from datetime import timedelta
-
+from django.core.files.storage import FileSystemStorage
+from django.shortcuts import render, HttpResponse
+from .models import Product
+from .forms import ImageForm, NewProduct
 
 
 def all_orders(request: HttpRequest, customer_id):
@@ -47,4 +49,35 @@ def client_orders(request, client_id):
 
     return render(request, 'shop_app/client.html', context)
 
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+    else:
+        form = ImageForm()
+    return render(request, 'shop_app/upload_image.html', {'form': form})
+
+
+
+
+def newproduct(request):
+    if request.method == "POST":
+        form = NewProduct(request.POST, request.FILES)
+        if form.is_valid():
+            title = form.cleaned_data["title"]
+            description = form.cleaned_data["description"]
+            price = form.cleaned_data["price"]
+            amount = form.cleaned_data["amount"]
+            product_image = form.cleaned_data['product_image']
+            product = Product(title=title, description=description,
+                              price=price,
+                              amount=amount, product_image=product_image)
+            product.save()
+        else:
+            return render(request, "shop_app/newproduct.html", {"form": form})
+    return render(request, "shop_app/newproduct.html", {"form": NewProduct()})
 

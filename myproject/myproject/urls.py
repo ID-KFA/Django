@@ -22,7 +22,8 @@ urlpatterns = [
     path('', include('hello_django.urls')),
     path('', include('random_app.urls')),
     path('', include('about_app.urls')),
-    path('', include('author.urls')),
     path('', include('shop_app.urls')),
+    path('', include('author.urls')),
+
 
 ]

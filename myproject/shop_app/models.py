@@ -46,6 +46,9 @@ from django.db import models
 
 Товары в списке не должны повторятся.
 
+Измените модель продукта, добавьте поле для хранения фотографии продукта.
+Создайте форму, которая позволит сохранять фото.
+
 
 """
 
@@ -67,6 +70,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     amount = models.IntegerField(default=0)
     product_added_date = models.DateField(auto_now_add=True)
+    product_image = models.ImageField(upload_to='images/', default='Add image',
+                                      blank=True)
 
     def __str__(self):
         return f"{self.title}"
