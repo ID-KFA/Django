@@ -1,0 +1,12 @@
+{% extends "random_app/base.html" %}
+{% block title %}{% endblock %}
+
+{% block content %}
+    <h1>{{ game_name }}</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Отправить">
+</form>
+{% endblock %}
