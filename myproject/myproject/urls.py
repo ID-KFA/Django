@@ -24,6 +24,6 @@ urlpatterns = [
     path('', include('about_app.urls')),
     path('', include('shop_app.urls')),
     path('', include('author.urls')),
-
+    # path('__debug__/', include('debug_toolbar.urls')),
 
 ]

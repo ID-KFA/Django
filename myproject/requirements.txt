@@ -1,5 +1,9 @@
 asgiref==3.7.2
+delocate==0.10.7
 Django==5.0.1
-pillow==10.2.0
+django-debug-toolbar==4.3.0
+mysqlclient==2.2.4
+packaging==23.2
+Pillow @ file:///Users/antonnovoselov/Desktop/Django/myproject/Pillow-9.4.0-cp310-cp310-macosx_10_10_x86_64.whl#sha256=60426b4fbb2e8dfa6d0d0eeca09b6ade660689e2687f104a12c291407512d41b
 sqlparse==0.4.4
 typing_extensions==4.9.0

@@ -319,3 +319,52 @@ Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 19
 "GET /newproduct/ HTTP/1.1" 200 1340
 "POST /newproduct/ HTTP/1.1" 200 1340
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 15785
+"GET / HTTP/1.1" 200 19
+"GET /newproduct/ HTTP/1.1" 200 11542
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=VersionsPanel HTTP/1.1" 200 760
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=TimerPanel HTTP/1.1" 200 2265
+"GET /static/debug_toolbar/js/timer.js HTTP/1.1" 200 3686
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=SettingsPanel HTTP/1.1" 200 26204
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=HeadersPanel HTTP/1.1" 200 5374
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=TemplatesPanel HTTP/1.1" 200 29072
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=SignalsPanel HTTP/1.1" 200 2276
+"GET /__debug__/render_panel/?store_id=10d29924d1244ffa8d73f13662222271&panel_id=HistoryPanel HTTP/1.1" 200 7429
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/author/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
