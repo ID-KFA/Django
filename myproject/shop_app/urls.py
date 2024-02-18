@@ -1,4 +1,9 @@
+from django.urls import path
+from . import views
+
 urlpatterns = [
-    # path('index/', views.index, name='index'),
-    # path('about/', views.about, name='about'),
+    path('orders/<int:customer_id>/', views.all_orders, name='all_orders'),
+    path('client/<int:client_id>/', views.client_orders, name='client_orders'),
+
+
 ]
