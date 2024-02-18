@@ -315,3 +315,7 @@ Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 19
 "GET /index/ HTTP/1.1" 200 1755
 "GET /about/ HTTP/1.1" 200 834
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+"GET /newproduct/ HTTP/1.1" 200 1340
+"POST /newproduct/ HTTP/1.1" 200 1340

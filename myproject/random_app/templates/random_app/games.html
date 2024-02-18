@@ -1,0 +1,11 @@
+{% extends "random_app/base.html" %}
+{% block title %}{% endblock %}
+
+{% block content %}
+    <h1>{{ game_name }}</h1>
+        {% for result in results %}
+            <p>{{ result }}</p>
+
+        {% endfor %}
+
+{% endblock %}
