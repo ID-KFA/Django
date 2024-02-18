@@ -7,3 +7,6 @@ packaging==23.2
 Pillow @ file:///Users/antonnovoselov/Desktop/Django/myproject/Pillow-9.4.0-cp310-cp310-macosx_10_10_x86_64.whl#sha256=60426b4fbb2e8dfa6d0d0eeca09b6ade660689e2687f104a12c291407512d41b
 sqlparse==0.4.4
 typing_extensions==4.9.0
+mysqlclient
+python-dotenv
+tzdata==2023.3
