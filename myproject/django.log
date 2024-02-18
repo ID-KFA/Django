@@ -1,0 +1,317 @@
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /
+"GET / HTTP/1.1" 400 62051
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 400 62004
+"GET / HTTP/1.1" 200 19
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+Watching for file changes with StatReloader
+"GET /coin HTTP/1.1" 301 0
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 10
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 8
+"GET /coin/ HTTP/1.1" 200 10
+"GET /dice HTTP/1.1" 301 0
+Internal Server Error: /dice/
+Traceback (most recent call last):
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py", line 15, in dice
+    i = randint(0, 6)
+NameError: name 'randint' is not defined
+"GET /dice/ HTTP/1.1" 500 58191
+Internal Server Error: /dice/
+Traceback (most recent call last):
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/antonnovoselov/Desktop/Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py", line 15, in dice
+    def dice(request):
+NameError: name 'randint' is not defined
+"GET /dice/ HTTP/1.1" 500 58307
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /rand_hundred HTTP/1.1" 301 0
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+Watching for file changes with StatReloader
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 14
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET / HTTP/1.1" 200 19
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+Not Found: /goods/dice
+"GET /goods/dice HTTP/1.1" 404 2782
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+Watching for file changes with StatReloader
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+"GET /rand_hundred/ HTTP/1.1" 200 15
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+"GET /dice/ HTTP/1.1" 200 14
+/Users/antonnovoselov/Desktop/Django/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Выпало 5
+"GET /dice/ HTTP/1.1" 200 14
+Выпало 2
+"GET /dice/ HTTP/1.1" 200 14
+Выпало 1
+"GET /dice/ HTTP/1.1" 200 14
+Выпало 5
+"GET /dice/ HTTP/1.1" 200 14
+Выпало 6
+"GET /dice/ HTTP/1.1" 200 14
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Функция coin вернула <HttpResponse status_code=200, "text/html; charset=utf-8">
+"GET /coin/ HTTP/1.1" 200 8
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Выпало 1
+Функция dice вернула <HttpResponse status_code=200, "text/html; charset=utf-8">
+"GET /dice/ HTTP/1.1" 200 14
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/random_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Выпало 1
+Функция dice вернула b'\xd0\x92\xd1\x8b\xd0\xbf\xd0\xb0\xd0\xbb\xd0\xbe 1'
+"GET /dice/ HTTP/1.1" 200 14
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3119
+"GET /about HTTP/1.1" 301 0
+"GET /about/ HTTP/1.1" 200 452
+"GET /index HTTP/1.1" 301 0
+"GET /index/ HTTP/1.1" 200 396
+"GET /index/ HTTP/1.1" 200 396
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /index.html
+"GET /index.html HTTP/1.1" 404 3116
+Not Found: /index.html
+"GET /index.html HTTP/1.1" 404 3116
+"GET / HTTP/1.1" 200 19
+"GET /index/ HTTP/1.1" 200 404
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 672
+"GET /index/ HTTP/1.1" 200 672
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 689
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 793
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 1904
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 1904
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 1754
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 296
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 834
+"GET /about/ HTTP/1.1" 200 834
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 1754
+"GET /about/ HTTP/1.1" 200 834
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+"GET /index/ HTTP/1.1" 200 1754
+"GET /about/ HTTP/1.1" 200 834
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 834
+"GET /about/ HTTP/1.1" 200 834
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/antonnovoselov/Desktop/Django/myproject/about_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /index/ HTTP/1.1" 200 1755
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3119
+"GET /about/ HTTP/1.1" 200 834
+"GET /index/ HTTP/1.1" 200 1755
+"GET / HTTP/1.1" 200 19
+"GET /about/ HTTP/1.1" 200 834
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19
+"GET /index/ HTTP/1.1" 200 1755
+"GET /about/ HTTP/1.1" 200 834
