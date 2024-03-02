@@ -21,11 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = 'django-insecure-5m!xl#lg1rl0+5mu%xi^ft#^2$uk7mpo0h^hsf+++7efz+ntp9'
-# SECRET_KEY = os.getenv('SECRET_KEY')
+# SECRET_KEY = 'django-insecure-5m!xl#lg1rl0+5mu%xi^ft#^2$uk7mpo0h^hsf+++7efz+ntp9'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
@@ -33,7 +33,7 @@ CSRF_COOKIE_SECURE = True
 ALLOWED_HOSTS = [
     # '10.0.1.3',
     '127.0.0.1',
-    # "idkfagb.pythonanywhere.com",
+    "idkfagb.pythonanywhere.com",
 ]
 
 INTERNAL_IPS = [
@@ -120,19 +120,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'idkfagb$default',
-#         'USER': 'idkfagb',
-#         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-#         'HOST': 'idkfagb.mysql.pythonanywhere-services.com',
-#         'OPTIONS': {
-#             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
-#             'charset': 'utf8mb4',
-#         },
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'idkfagb$default',
+        'USER': 'idkfagb',
+        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+        'HOST': 'idkfagb.mysql.pythonanywhere-services.com',
+        'OPTIONS': {
+            'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4',
+        },
+    }
+}
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
