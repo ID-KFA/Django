@@ -73,6 +73,10 @@ class Product(models.Model):
     product_image = models.ImageField(upload_to='images/', default='Add image',
                                       blank=True)
 
+    @property
+    def photo_url(self):
+        if self.product_image and hasattr(self.product_image, 'url'):
+            return self.product_image.url
     def __str__(self):
         return f"{self.title}"
 

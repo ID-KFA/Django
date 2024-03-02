@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="card">
+        {% if recipe.image %}
+            <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ recipe.title }}">
+        {% else %}
+            <img src="{% static 'img/no_image.png' %}" class="card-img-top" alt="{{ recipe.title }}">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ recipe.title }}</h5>
+            <p class="card-text">{{ recipe.description }}</p>
+            <p class="card-text">Время приготовления: {{ recipe.cooking_time }} мин</p>
+            <p class="card-text">Ингридиенты:  {{ recipe.ingredients }} </p>
+            <p class="card-text">Как готовить: {{ recipe.cooking_steps|linebreaks }}</p>
+
+            {% if recipe.author == user or user.is_staff %}
+                <div class="col-4">
+                    <a class="btn btn-outline-info" href="{% url 'edit_recipe' recipe.id %}">Я знаю, как сделать вкуснее</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

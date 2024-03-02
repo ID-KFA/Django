@@ -13,6 +13,10 @@ def all_orders(request: HttpRequest, customer_id):
 
     return render(request, "shop_app/orders.html", {"orders": orders})
 
+def all_products(request):
+    # получаем все значения модели
+    products = Product.objects.all()
+    return render(request, 'shop_app/home_page.html', {'products': products})
 
 def client_orders(request, client_id):
     client = Client.objects.get(id=client_id)
@@ -61,7 +65,10 @@ def upload_image(request):
         form = ImageForm()
     return render(request, 'shop_app/upload_image.html', {'form': form})
 
-
+def index(request):
+    products_list = Product.objects.all()
+    context_dict = {'products': products_list}
+    return render(request, 'index.html', context_dict)
 
 
 def newproduct(request):

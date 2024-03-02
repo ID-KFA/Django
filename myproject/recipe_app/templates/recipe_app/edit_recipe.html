@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h5>Делаем вкуснее:</h5>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if form.errors %}
+        <ul>
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <li>{{ field.label }}: {{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <button type="submit"> Готово </button>
+</form>
+{% endblock %}

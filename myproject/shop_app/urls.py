@@ -9,6 +9,7 @@ urlpatterns = [
     path('client/<int:client_id>/', views.client_orders, name='client_orders'),
     path('newproduct/', views.newproduct, name='newproduct'),
     path('upload/', views.upload_image, name='upload_image'),
+    path('all/', views.all_products, name='all_products'),
 
 ]
 if settings.DEBUG:
