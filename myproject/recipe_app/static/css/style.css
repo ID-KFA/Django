@@ -1,0 +1,35 @@
+
+*{
+margin:0;
+padding:0;
+
+}
+header{
+display: flex;
+justify-content: center;
+
+}
+
+.Logo, .Top_menu{
+ margin-right: 25px;
+display: inline-block;
+
+
+}
+
+.Top_menu li{
+    margin-right: 25px;
+    display: inline-block;
+
+}
+
+.Top_menu a{
+
+    font-family: arial;
+    font-size: 15px;
+}
+.Logo h4{
+
+    font-family: arial;
+    font-size: 20px;
+}

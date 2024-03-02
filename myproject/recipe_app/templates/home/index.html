@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <div class="row">
+            {% for recipe in recipes %}
+                <div class="col-md-6">
+                        <div class="card">
+                            {% if recipe.image %}
+                                <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ recipe.title }}">
+                            {% else %}
+                                <img src="{% static 'img/no_image.png' %}" class="card-img-top" alt="{{ recipe.title }}">
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ recipe.title }}</h5>
+                                <p class="card-text">{{ recipe.description|truncatewords:30|linebreaks }}</p>
+                                <p class="card-text">Время приготовления: {{ recipe.cooking_time }} мин</p>
+                                <a href="{% url 'recipe_detail' recipe.id %}" class="btn btn-primary">Приготовить</a>
+                            </div>
+                        </div>
+                </div>
+            {% endfor %}
+    </div>
+
+{% endblock %}

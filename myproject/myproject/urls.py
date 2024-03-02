@@ -17,13 +17,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path, include
+
+from recipe_app.views import index
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('hello_django.urls')),
-    path('', include('random_app.urls')),
-    path('', include('about_app.urls')),
-    path('', include('shop_app.urls')),
-    path('', include('author.urls')),
+    # path('', include('hello_django.urls')),
+    # path('', include('random_app.urls')),
+    # path('', include('about_app.urls')),
+    # path('', include('shop_app.urls')),
+    # path('', include('author.urls')),
+    path('', include('recipe_app.urls')),
+    path('', index, name='index'),
+
     # path('__debug__/', include('debug_toolbar.urls')),
 
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

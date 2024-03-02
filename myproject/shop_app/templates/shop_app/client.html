@@ -28,8 +28,10 @@
 <ul>
     {% for product in year_products %}
         <li>{{ product.title }}</li>
+        <img src="{{ product.product_image.url }}" alt="{{ product.title }}" width="320" height="320"><br>
     {% endfor %}
 </ul>
+
 
 
 </body>
