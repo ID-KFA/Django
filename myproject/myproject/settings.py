@@ -33,7 +33,7 @@ CSRF_COOKIE_SECURE = True
 ALLOWED_HOSTS = [
     # '10.0.1.3',
     '127.0.0.1',
-    "idkfagb.pythonanywhere.com",
+    "soupissimple.pythonanywhere.com",
 ]
 
 INTERNAL_IPS = [
@@ -123,22 +123,22 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'idkfagb$default',
-        'USER': 'idkfagb',
+        'NAME': 'soupissimple$default',
+        'USER': 'soupissimple',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'idkfagb.mysql.pythonanywhere-services.com',
+        'HOST': 'soupissimple.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
         },
     }
 }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
